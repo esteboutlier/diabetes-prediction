@@ -1,6 +1,6 @@
 # Predicción de Diabetes con Machine Learning
 
-Este proyecto utiliza técnicas de regresión para predecir la presencia de diabetes basada en medidas diagnósticas.
+Este proyecto utiliza técnicas de clasificación para predecir la presencia de diabetes basada en medidas diagnósticas.
 
 ## Tecnologías utilizadas
 
