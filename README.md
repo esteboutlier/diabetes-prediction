@@ -26,15 +26,17 @@ A diferencia de un enfoque puramente de ingeniería, este proyecto se centró en
 
 ## Estructura del Proyecto
 
-├── data/raw/       # Dataset original (Diabetes_and_LifeStyle_Dataset)
-├── models/         # Artefactos entrenados (model.joblib, scaler.joblib)
-├── notebooks/      # Análisis exploratorio y experimentación inicial
+diabetes-prediction/
+├── data/
+│   └── raw/             # Dataset original y archivos CSV
+├── models/              # Artefactos: model.joblib y scaler.joblib
+├── notebooks/           # EDA y experimentación
 ├── src/
-│   ├── preprocessing.py  # Lógica de limpieza y dummificación
-│   ├── train.py          # Script de entrenamiento y evaluación
-│   └── app.py            # Interfaz de usuario (Gradio)
-├── requirements.txt
-└── README.md
+│   ├── preprocessing.py # Funciones de limpieza y feature engineering
+│   ├── train.py         # Script de entrenamiento y comparación de modelos
+│   └── app.py           # Interfaz interactiva para el usuario final (Gradio)
+├── requirements.txt     # Dependencias del proyecto
+└── README.md            # Documentación principal
 
 ## Stack Técnico
 
