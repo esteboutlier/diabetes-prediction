@@ -48,7 +48,7 @@ diabetes-prediction/
 
 ## Cómo replicar el análisis
 
-Clonar: git clone https://github.com/esteboutlier/diabetes-prediction.git
+Clonar: git clone <https://github.com/esteboutlier/diabetes-prediction.git>
 
 Instalar dependencias: uv sync
 
