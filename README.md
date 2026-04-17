@@ -1,55 +1,75 @@
-# Proyecto: Análisis Predictivo de Diabetes
+# 🩺 Diabetes Risk Predictor: End-to-End ML Pipeline
 
-Este proyecto presenta un ciclo completo de análisis de datos de salud, con un enfoque principal en el Análisis Exploratorio de Datos (EDA) y la identificación de factores de riesgo, utilizando Machine Learning para validar las hipótesis encontradas.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-orange?style=for-the-badge&logo=gradio&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-## Objetivo del Proyecto
+---
 
-Identificar los indicadores biométricos más críticos en la detección de diabetes y construir un modelo de clasificación capaz de asistir en el triaje preventivo de pacientes.
+## 🌎 Language / Idioma
 
-## Enfoque de Análisis (Data Analytics)
+> 📖 [Read in English](README.md) | [Leer en Español](README_ES.md)
 
-A diferencia de un enfoque puramente de ingeniería, este proyecto se centró en:
+## Project: Predictive Diabetes Analysis
 
-* Calidad de Datos: Tratamiento de valores nulos y ceros biológicamente imposibles (en Glucosa, BMI, etc.) mediante imputación estadística por mediana.
+This project presents a complete health data analysis cycle, with a primary focus on Exploratory Data Analysis (EDA) and risk factor identification, using Machine Learning to validate the findings.
 
-* Ingeniería de Variables: Transformación de variables categóricas (Género) y análisis de su correlación con el diagnóstico.
+### Project Goal
 
-* Interpretabilidad: Uso de modelos basados en árboles para extraer la importancia de las variables, permitiendo explicar por qué el modelo toma ciertas decisiones.
+Identify the most critical biometric indicators for diabetes detection and build a classification model capable of assisting in preventive patient triage.
 
-## Hallazgos y Resultados
+### Analysis Approach (Data Analytics)
 
-* Variable Crítica: (Ejemplo: El hba1c resultó ser el predictor más fuerte con un peso del 79.8%).
+Unlike a purely engineering-focused approach, this project centered on:
 
-* Desempeño: Se logró un Accuracy de 92.04%, priorizando la reducción de Falsos Negativos debido al contexto de salud.
+* Data Quality: Handling null values and biologically impossible zeros (in Glucose, BMI, etc.) through median-based statistical imputation.
 
-* Balanceo: Aplicación de técnicas de muestreo estratificado para corregir el desbalance en la distribución de diagnósticos.
+* Feature Engineering: Transformation of categorical variables (Gender) and analysis of their correlation with the diagnosis.
 
-## Estructura del Proyecto
+* Interpretability: Use of tree-based models to extract feature importance, enabling clear explanations of why the model makes certain decisions.
+
+### Findings and Results
+
+* Critical Variable: HbA1c turned out to be the strongest predictor, with a weight of 79.8%.
+
+* Performance: An accuracy of 92.04% was achieved, prioritizing the reduction of False Negatives given the healthcare context.
+
+* Balancing: Application of stratified sampling techniques to correct the imbalance in the diagnosis class distribution.
+
+### Project Structure
 
 diabetes-prediction/
 ├── data/
-│   └── raw/             # Dataset original y archivos CSV
-├── models/              # Artefactos: model.joblib y scaler.joblib
-├── notebooks/           # EDA y experimentación
+│   └── raw/             # Original dataset and CSV files
+├── models/              # Artifacts: model.joblib and scaler.joblib
+├── notebooks/           # EDA and experimentation
 ├── src/
-│   ├── preprocessing.py # Funciones de limpieza y feature engineering
-│   ├── train.py         # Script de entrenamiento y comparación de modelos
-│   └── app.py           # Interfaz interactiva para el usuario final (Gradio)
-├── requirements.txt     # Dependencias del proyecto
-└── README.md            # Documentación principal
+│   ├── preprocessing.py # Cleaning and feature engineering functions
+│   ├── train.py         # Training script and model comparison
+│   └── app.py           # Interactive interface for end users (Gradio)
+├── requirements.txt     # Project dependencies
+└── README.md            # Main documentation
 
-## Stack Técnico
+### Tech Stack
 
-* Análisis y Visualización: Pandas, Matplotlib, Seaborn.
+* Analysis & Visualization: Pandas, Matplotlib, Seaborn.
 
-* Modelado Estadístico: Scikit-Learn (Logistic Regression & Random Forest).
+* Statistical Modeling: Scikit-Learn (Logistic Regression & Random Forest).
 
-* Entorno de Trabajo: Python 3.12 gestionado con uv.
+* Environment: Python 3.12 managed with uv.
 
-## Cómo replicar el análisis
+### How to Replicate the Analysis
 
-Clonar: git clone <https://github.com/esteboutlier/diabetes-prediction.git>
+Clone: git clone <https://github.com/esteboutlier/diabetes-prediction.git>
 
-Instalar dependencias: uv sync
+Install dependencies: uv sync
 
-Explorar los hallazgos en notebooks/ o ejecutar la herramienta predictiva con python src/app.py.
+Explore the findings in notebooks/ or run the predictive tool with python src/app.py.
+
+### 📩 Contact
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)]<https://www.linkedin.com/in/estebgomiba>
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)]
+<https://github.com/esteboutlier>
